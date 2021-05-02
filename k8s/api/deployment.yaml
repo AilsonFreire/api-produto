@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: ailsonfreire/api-kubebot-produto:v1
+        image: ailsonfreire/api-kubebot-produto:v2
         ports:
         - containerPort: 8080
         env:
