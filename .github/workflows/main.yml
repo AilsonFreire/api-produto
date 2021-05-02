@@ -75,6 +75,7 @@ jobs:
         uses: Azure/k8s-deploy@v1.3
         with:
           # Path to the manifest files which will be used for deployment.
+          images: ailsonfreire/api-kubebot-produto:v${{github.run_number}}
           manifests: |
             k8s/api/deployment.yaml
             
