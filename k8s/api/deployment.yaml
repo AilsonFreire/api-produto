@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api
-        image: ailsonfreire/api-kubebot-produto:v2
+        image: ailsonfreire/api-kubebot-produto:v4
         ports:
         - containerPort: 8080
         env:
@@ -35,4 +35,4 @@ spec:
   - port: 80
     targetPort: 8080
     nodePort: 30000
-  type: NodePort
+  type: LoadBalancer
