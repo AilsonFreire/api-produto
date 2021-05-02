@@ -35,6 +35,6 @@ jobs:
           push: true
           tags: 
             ailsonfreire/api-kubebot-produto:latest
-            ailsonfreire/api-kubebot-produto:${{github.run_number}}
+            ailsonfreire/api-kubebot-produto:v${{github.run_number}}
 
     
